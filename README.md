@@ -25,29 +25,18 @@ The animation module visualizes 3D dance sequences with a speed that adapts base
 
 ## Part2: Train a multimodal model of dance & text
 
-### Model Selection
-I opted for a VAE structure with LSTM layers for this model. LSTM is well-suited for capturing the sequential nature of dance data, whereas GNNs, despite modeling joint relationships, are computationally more demanding and less effective for our generation task.
+The model consists of two main components:
 
-### Data Processing
-- **Preprocessing:** Center the motion capture data.
-- **Dataset Split:**  
-  - 70% Training  
-  - 15% Validation  
-  - 15% Testing
-- **Sequence Length:** Set to 64 (with no overlap).
+1. **DanceEncoder**: An LSTM-based encoder that processes motion capture sequences
+   - Input: Dance sequence of shape (sequence_length, num_joints*3)
+   - Output: Normalized embedding vector
 
-### Model Design
-- **Encoders:**  
-  - **Dance Encoder (`DacneEncoder`):**  
-    Utilizes a 2-layer bidirectional LSTM, applies mean pooling over time, and projects the result to an embedding space via a linear layer. *(Ensure the initializer is named `__init__`.)*
-  - **Text Encoder (`TextEncoder`):**  
-    Uses an embedding layer followed by a GRU to process text, with mean pooling and a linear projection to the same embedding space. *(Rename the method from `forwad` to `forward`.)*
+2. **TextEncoder**: A GRU-based encoder that processes text descriptions
+   - Input: Tokenized text sequence
+   - Output: Normalized embedding vector
 
-- **Loss Function:**  
-  Implements a contrastive loss (InfoNCE) by comparing dance and text embeddings (scaled by a temperature parameter) using cross-entropy loss in both directions.
+The model is trained using contrastive learning (InfoNCE loss) to align dance and text embeddings in the same space.
 
-- **Training & Generation:**  
-  - **Training:** Uses the Adam optimizer to update model parameters over multiple epochs.  
-  - **Generation:**  
-    - `generate_dance_from_text`: Retrieves the dance sequence that best matches a text input.  
-    - `generate_text_from_dance`: Retrieves the text description that best corresponds to a dance input.
+## Results
+
+![This plot shows the training and validation loss over epochs. The training loss (blue line) decreases from approximately 0.8 to 0.1, indicating that the model is learning to align dance and text embeddings in the shared space. The validation loss (red line) follows a similar trend but is slightly higher, which is expected and indicates that the model is generalizing well without significant overfitting.]
