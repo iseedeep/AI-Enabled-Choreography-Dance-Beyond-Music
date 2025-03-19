@@ -51,5 +51,5 @@ The model is trained using contrastive learning (InfoNCE loss) to align dance an
 
 *This bar chart shows the accuracy of text-to-dance generation (blue bars) and dance-to-text generation (red bars) on 5 test samples, plus the average.*
 
-## Project Summary
+## Summary
 This multimodal model represents a crucial step in merging artistic movement with language through deep learning. I plan to refine the model further by experimenting with larger datasets, overlapping sequences, and additional data augmentation techniques.
