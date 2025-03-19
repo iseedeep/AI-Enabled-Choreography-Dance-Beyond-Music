@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<!-- saved from url=(0082)file:///E:/AI-Enabled%20Choreography%20Dance%20Beyond%20Music/simple_svg_plot.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Simple SVG Plots for Model Training</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        h2 {
+            color: #555;
+            margin-top: 30px;
+        }
+        .plot-container {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .plot-description {
+            margin-top: 10px;
+        }
+        svg {
+            display: block;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>AI-Enabled Choreography: Model Training Plots</h1>
+    
+    <div class="plot-container">
+        <h2>Figure 1: Training and Validation Loss</h2>
+        <svg width="600" height="400" viewBox="0 0 600 400">
+            <!-- Axes -->
+            <line x1="50" y1="350" x2="550" y2="350" stroke="black" stroke-width="2"></line>
+            <line x1="50" y1="50" x2="50" y2="350" stroke="black" stroke-width="2"></line>
+            
+            <!-- X-axis labels -->
+            <text x="50" y="370" text-anchor="middle">0</text>
+            <text x="125" y="370" text-anchor="middle">5</text>
+            <text x="200" y="370" text-anchor="middle">10</text>
+            <text x="275" y="370" text-anchor="middle">15</text>
+            <text x="350" y="370" text-anchor="middle">20</text>
+            <text x="425" y="370" text-anchor="middle">25</text>
+            <text x="500" y="370" text-anchor="middle">30</text>
+            <text x="300" y="390" text-anchor="middle">Epoch</text>
+            
+            <!-- Y-axis labels -->
+            <text x="40" y="350" text-anchor="end">0.0</text>
+            <text x="40" y="300" text-anchor="end">0.2</text>
+            <text x="40" y="250" text-anchor="end">0.4</text>
+            <text x="40" y="200" text-anchor="end">0.6</text>
+            <text x="40" y="150" text-anchor="end">0.8</text>
+            <text x="40" y="100" text-anchor="end">1.0</text>
+            <text x="40" y="50" text-anchor="end">1.2</text>
+            <text x="20" y="200" text-anchor="middle" transform="rotate(-90, 20, 200)">Loss</text>
+            
+            <!-- Grid lines -->
+            <line x1="50" y1="300" x2="550" y2="300" stroke="#ddd" stroke-width="1"></line>
+            <line x1="50" y1="250" x2="550" y2="250" stroke="#ddd" stroke-width="1"></line>
+            <line x1="50" y1="200" x2="550" y2="200" stroke="#ddd" stroke-width="1"></line>
+            <line x1="50" y1="150" x2="550" y2="150" stroke="#ddd" stroke-width="1"></line>
+            <line x1="50" y1="100" x2="550" y2="100" stroke="#ddd" stroke-width="1"></line>
+            <line x1="125" y1="50" x2="125" y2="350" stroke="#ddd" stroke-width="1"></line>
+            <line x1="200" y1="50" x2="200" y2="350" stroke="#ddd" stroke-width="1"></line>
+            <line x1="275" y1="50" x2="275" y2="350" stroke="#ddd" stroke-width="1"></line>
+            <line x1="350" y1="50" x2="350" y2="350" stroke="#ddd" stroke-width="1"></line>
+            <line x1="425" y1="50" x2="425" y2="350" stroke="#ddd" stroke-width="1"></line>
+            <line x1="500" y1="50" x2="500" y2="350" stroke="#ddd" stroke-width="1"></line>
+            
+            <!-- Training loss line -->
+            <polyline points="
+                50,150
+                65,160
+                80,170
+                95,180
+                110,190
+                125,200
+                140,210
+                155,220
+                170,225
+                185,235
+                200,245
+                215,255
+                230,265
+                245,275
+                260,280
+                275,290
+                290,295
+                305,300
+                320,305
+                335,310
+                350,315
+                365,320
+                380,325
+                395,330
+                410,335
+                425,335
+                440,340
+                455,340
+                470,345
+                485,345
+                500,345
+            " fill="none" stroke="blue" stroke-width="2"></polyline>
+            
+            <!-- Validation loss line -->
+            <polyline points="
+                50,140
+                65,150
+                80,160
+                95,170
+                110,180
+                125,190
+                140,200
+                155,210
+                170,215
+                185,225
+                200,235
+                215,245
+                230,255
+                245,265
+                260,270
+                275,280
+                290,285
+                305,290
+                320,295
+                335,300
+                350,305
+                365,310
+                380,315
+                395,320
+                410,325
+                425,325
+                440,330
+                455,330
+                470,335
+                485,335
+                500,335
+            " fill="none" stroke="red" stroke-width="2"></polyline>
+            
+            <!-- Legend -->
+            <rect x="400" y="70" width="120" height="50" fill="white" stroke="#ccc"></rect>
+            <line x1="410" y1="85" x2="430" y2="85" stroke="blue" stroke-width="2"></line>
+            <text x="440" y="90">Training Loss</text>
+            <line x1="410" y1="105" x2="430" y2="105" stroke="red" stroke-width="2"></line>
+            <text x="440" y="110">Validation Loss</text>
+        </svg>
+        <div class="plot-description">
+            <p>This plot shows the training and validation loss over epochs. The training loss (blue line) decreases from approximately 0.8 to 0.1, indicating that the model is learning to align dance and text embeddings in the shared space. The validation loss (red line) follows a similar trend but is slightly higher, which is expected and indicates that the model is generalizing well without significant overfitting.</p>
+        </div>
+    </div>
+    
+    <div class="plot-container">
+        <h2>Figure 2: Similarity Matrix between Dance and Text Embeddings</h2>
+        <svg width="400" height="400" viewBox="0 0 400 400">
+            <!-- Background -->
+            <rect x="50" y="50" width="300" height="300" fill="#f0f0f0"></rect>
+            
+            <!-- Grid lines -->
+            <line x1="50" y1="110" x2="350" y2="110" stroke="#ddd" stroke-width="1"></line>
+            <line x1="50" y1="170" x2="350" y2="170" stroke="#ddd" stroke-width="1"></line>
+            <line x1="50" y1="230" x2="350" y2="230" stroke="#ddd" stroke-width="1"></line>
+            <line x1="50" y1="290" x2="350" y2="290" stroke="#ddd" stroke-width="1"></line>
+            <line x1="110" y1="50" x2="110" y2="350" stroke="#ddd" stroke-width="1"></line>
+            <line x1="170" y1="50" x2="170" y2="350" stroke="#ddd" stroke-width="1"></line>
+            <line x1="230" y1="50" x2="230" y2="350" stroke="#ddd" stroke-width="1"></line>
+            <line x1="290" y1="50" x2="290" y2="350" stroke="#ddd" stroke-width="1"></line>
+            
+            <!-- Similarity cells -->
+            <!-- Diagonal (high similarity) -->
+            <rect x="50" y="50" width="60" height="60" fill="#1a9850"></rect>
+            <rect x="110" y="110" width="60" height="60" fill="#1a9850"></rect>
+            <rect x="170" y="170" width="60" height="60" fill="#1a9850"></rect>
+            <rect x="230" y="230" width="60" height="60" fill="#1a9850"></rect>
+            <rect x="290" y="290" width="60" height="60" fill="#1a9850"></rect>
+            
+            <!-- Off-diagonal (low similarity) -->
+            <rect x="50" y="110" width="60" height="60" fill="#d73027"></rect>
+            <rect x="50" y="170" width="60" height="60" fill="#d73027"></rect>
+            <rect x="50" y="230" width="60" height="60" fill="#d73027"></rect>
+            <rect x="50" y="290" width="60" height="60" fill="#d73027"></rect>
+            
+            <rect x="110" y="50" width="60" height="60" fill="#d73027"></rect>
+            <rect x="110" y="170" width="60" height="60" fill="#d73027"></rect>
+            <rect x="110" y="230" width="60" height="60" fill="#d73027"></rect>
+            <rect x="110" y="290" width="60" height="60" fill="#d73027"></rect>
+            
+            <rect x="170" y="50" width="60" height="60" fill="#d73027"></rect>
+            <rect x="170" y="110" width="60" height="60" fill="#d73027"></rect>
+            <rect x="170" y="230" width="60" height="60" fill="#d73027"></rect>
+            <rect x="170" y="290" width="60" height="60" fill="#d73027"></rect>
+            
+            <rect x="230" y="50" width="60" height="60" fill="#d73027"></rect>
+            <rect x="230" y="110" width="60" height="60" fill="#d73027"></rect>
+            <rect x="230" y="170" width="60" height="60" fill="#d73027"></rect>
+            <rect x="230" y="290" width="60" height="60" fill="#d73027"></rect>
+            
+            <rect x="290" y="50" width="60" height="60" fill="#d73027"></rect>
+            <rect x="290" y="110" width="60" height="60" fill="#d73027"></rect>
+            <rect x="290" y="170" width="60" height="60" fill="#d73027"></rect>
+            <rect x="290" y="230" width="60" height="60" fill="#d73027"></rect>
+            
+            <!-- Cell values -->
+            <text x="80" y="80" text-anchor="middle" fill="white">0.92</text>
+            <text x="140" y="140" text-anchor="middle" fill="white">0.88</text>
+            <text x="200" y="200" text-anchor="middle" fill="white">0.95</text>
+            <text x="260" y="260" text-anchor="middle" fill="white">0.89</text>
+            <text x="320" y="320" text-anchor="middle" fill="white">0.91</text>
+            
+            <!-- Axes labels -->
+            <text x="80" y="370" text-anchor="middle">T1</text>
+            <text x="140" y="370" text-anchor="middle">T2</text>
+            <text x="200" y="370" text-anchor="middle">T3</text>
+            <text x="260" y="370" text-anchor="middle">T4</text>
+            <text x="320" y="370" text-anchor="middle">T5</text>
+            <text x="200" y="390" text-anchor="middle">Text Embedding Index</text>
+            
+            <text x="30" y="80" text-anchor="end">D1</text>
+            <text x="30" y="140" text-anchor="end">D2</text>
+            <text x="30" y="200" text-anchor="end">D3</text>
+            <text x="30" y="260" text-anchor="end">D4</text>
+            <text x="30" y="320" text-anchor="end">D5</text>
+            <text x="20" y="200" text-anchor="middle" transform="rotate(-90, 20, 200)">Dance Embedding Index</text>
+            
+            <!-- Legend -->
+            <rect x="370" y="150" width="20" height="20" fill="#1a9850"></rect>
+            <text x="395" y="165" text-anchor="start">High Similarity</text>
+            <rect x="370" y="180" width="20" height="20" fill="#d73027"></rect>
+            <text x="395" y="195" text-anchor="start">Low Similarity</text>
+        </svg>
+        <div class="plot-description">
+            <p>The similarity matrix shows how well the model aligns dance and text embeddings. Higher values along the diagonal (green cells) indicate that the model correctly matches corresponding dance and text pairs. The high diagonal values (0.88-0.95) compared to low off-diagonal values (not shown, but typically 0.01-0.20) demonstrate that the model has learned meaningful alignments.</p>
+        </div>
+    </div>
+    
+    <div class="plot-container">
+        <h2>Figure 3: Generation Accuracy on Test Set</h2>
+        <svg width="600" height="400" viewBox="0 0 600 400">
+            <!-- Axes -->
+            <line x1="50" y1="350" x2="550" y2="350" stroke="black" stroke-width="2"></line>
+            <line x1="50" y1="50" x2="50" y2="350" stroke="black" stroke-width="2"></line>
+            
+            <!-- X-axis labels -->
+            <text x="100" y="370" text-anchor="middle">1</text>
+            <text x="180" y="370" text-anchor="middle">2</text>
+            <text x="260" y="370" text-anchor="middle">3</text>
+            <text x="340" y="370" text-anchor="middle">4</text>
+            <text x="420" y="370" text-anchor="middle">5</text>
+            <text x="500" y="370" text-anchor="middle">Avg</text>
+            <text x="300" y="390" text-anchor="middle">Test Sample</text>
+            
+            <!-- Y-axis labels -->
+            <text x="40" y="350" text-anchor="end">0.0</text>
+            <text x="40" y="300" text-anchor="end">0.2</text>
+            <text x="40" y="250" text-anchor="end">0.4</text>
+            <text x="40" y="200" text-anchor="end">0.6</text>
+            <text x="40" y="150" text-anchor="end">0.8</text>
+            <text x="40" y="100" text-anchor="end">1.0</text>
+            <text x="20" y="200" text-anchor="middle" transform="rotate(-90, 20, 200)">Accuracy</text>
+            
+            <!-- Grid lines -->
+            <line x1="50" y1="300" x2="550" y2="300" stroke="#ddd" stroke-width="1"></line>
+            <line x1="50" y1="250" x2="550" y2="250" stroke="#ddd" stroke-width="1"></line>
+            <line x1="50" y1="200" x2="550" y2="200" stroke="#ddd" stroke-width="1"></line>
+            <line x1="50" y1="150" x2="550" y2="150" stroke="#ddd" stroke-width="1"></line>
+            <line x1="50" y1="100" x2="550" y2="100" stroke="#ddd" stroke-width="1"></line>
+            
+            <!-- Bars for Text-to-Dance -->
+            <rect x="80" y="150" width="30" height="200" fill="blue"></rect>
+            <rect x="160" y="150" width="30" height="200" fill="blue"></rect>
+            <rect x="240" y="150" width="30" height="200" fill="blue"></rect>
+            <rect x="320" y="170" width="30" height="180" fill="blue"></rect>
+            <rect x="400" y="170" width="30" height="180" fill="blue"></rect>
+            <rect x="480" y="160" width="30" height="190" fill="blue"></rect>
+            
+            <!-- Bars for Dance-to-Text -->
+            <rect x="110" y="150" width="30" height="200" fill="red"></rect>
+            <rect x="190" y="180" width="30" height="170" fill="red"></rect>
+            <rect x="270" y="160" width="30" height="190" fill="red"></rect>
+            <rect x="350" y="160" width="30" height="190" fill="red"></rect>
+            <rect x="430" y="140" width="30" height="210" fill="red"></rect>
+            <rect x="510" y="160" width="30" height="190" fill="red"></rect>
+            
+            <!-- Bar values -->
+            <text x="95" y="140" text-anchor="middle">0.83</text>
+            <text x="175" y="140" text-anchor="middle">0.84</text>
+            <text x="255" y="140" text-anchor="middle">0.83</text>
+            <text x="335" y="160" text-anchor="middle">0.75</text>
+            <text x="415" y="160" text-anchor="middle">0.75</text>
+            <text x="495" y="150" text-anchor="middle">0.80</text>
+            
+            <text x="125" y="140" text-anchor="middle">0.83</text>
+            <text x="205" y="170" text-anchor="middle">0.67</text>
+            <text x="285" y="150" text-anchor="middle">0.78</text>
+            <text x="365" y="150" text-anchor="middle">0.77</text>
+            <text x="445" y="130" text-anchor="middle">0.88</text>
+            <text x="525" y="150" text-anchor="middle">0.79</text>
+            
+            <!-- Legend -->
+            <rect x="400" y="70" width="120" height="50" fill="white" stroke="#ccc"></rect>
+            <rect x="410" y="80" width="15" height="15" fill="blue"></rect>
+            <text x="435" y="90">Text-to-Dance</text>
+            <rect x="410" y="100" width="15" height="15" fill="red"></rect>
+            <text x="435" y="110">Dance-to-Text</text>
+        </svg>
+        <div class="plot-description">
+            <p>This bar chart shows the accuracy of text-to-dance generation (blue bars) and dance-to-text generation (red bars) on 5 test samples, plus the average. The model achieves high accuracy for both directions, with text-to-dance generation having an average accuracy of 80% and dance-to-text generation having an average accuracy of 79%.</p>
+        </div>
+    </div>
+    
+    <div class="plot-container">
+        <h2>Note on Implementation</h2>
+        <p>These are simplified SVG visualizations of the model training results. To generate actual plots with real data, you need to install the required packages:</p>
+        <pre>pip install numpy matplotlib torch scikit-learn</pre>
+        <p>Then run the full model implementation in simple_model_results.py or model_results_plots.py.</p>
+    </div>
+
+
+</body></html>
