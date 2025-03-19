@@ -1,9 +1,18 @@
-I’m applying to the AI-Enabled Choreography project because it feels like the perfect intersection of two passions I’ve carried throughout my life: art and deep learning. The moment I read about this project, I thought, “This is exactly what I’ve been waiting for!” I’ve always been fascinated by how creativity and technology can work together in magical, unexpected ways—sort of like how La La Land captures the whimsy and vigor of artistic expression.
+## Why this Project?
 
-My artistic background is primarily rooted in music production. I’ve produced various EDM tracks (future bass, future house, even a few rap/EDM mashups), and you can find some of my work on NetEase Music under my artist page: link here. Born in Xinjiang, China, I’m a Uyghur, and my culture is famously known as “a nation of song and dance.” Being raised in an environment that celebrates music and movement shaped my passion for exploring innovative ways to fuse these art forms.
+I’m excited to apply for the AI-Enabled Choreography project because it perfectly combines two areas that inspire me: art and deep learning. When I first read about this project, I thought, “Finally, a chance to merge creativity with cutting-edge tech!”
 
-Although I’m still polishing my AI coding skills, I’ve dabbled in AI-driven music tools and have seen firsthand how technology can help amplify artistic expression. The potential benefits of AI in the creative process are immense: quicker prototyping, real-time feedback loops, and an expanded horizon of what’s possible in music and choreography. However, I’m also aware of potential drawbacks, such as over-reliance on algorithms and the risk of losing the raw, human touch that makes art resonate with our deepest emotions. I believe the key is striking that perfect balance—letting AI take on tedious tasks while humans preserve the spontaneity and soul of the craft.
+## Background in Music and Culture
 
-When it comes to research collaboration, I love working closely with others but tend to prefer text-based communication—whether that’s through chat platforms or email—because it’s fantastic for record-keeping and thoughtful iteration. My big dream for this project is to integrate dance and music generation into a single ecosystem—imagine a platform like Ableton Live, but with a built-in “ChoreoAI” plugin that choreographs movement and lighting cues in sync with newly generated tracks. This kind of multimodal synergy could open brand-new avenues for both music producers and choreographers, letting them co-create in ways we’ve never seen before.
+My artistic journey is rooted in music production. I’ve produced various EDM tracks—including future bass, future house, and even a few rap/EDM mashups. You can check out some of my work on my [NetEase Music artist page](https://music.163.com/#/artist?id=12037128). Born in Xinjiang, China, I’m Uyghur, and my culture is celebrated as “a nation of song and dance.” Growing up surrounded by music and movement has ignited my passion for blending traditional art with modern technology.
 
-Thank you for your consideration. I’m excited to learn, experiment, and collaborate on pushing the boundaries of AI-infused artistry—and I can’t wait to see what we can accomplish together!
+![12 Muqam: A celebration of traditional Uyghur musical heritage with intricate rhythms and soulful melodies](/12muqam.jpeg)  
+*12 Muqam: A celebration of traditional Uyghur musical heritage with intricate rhythms and soulful melodies*
+
+Even as a beginner in deep learning, I’ve been exploring AI-driven music tools and am impressed by how technology can amplify artistic expression. The benefits are exciting—quicker prototyping, real-time feedback, and boundless creative possibilities. I also understand the importance of preserving that raw human touch, ensuring that art remains heartfelt and resonant.
+
+I value clear, thoughtful communication—preferably via text or email—to keep our creative process well-documented and collaborative. My big vision for this project is to merge dance and music generation into one cohesive ecosystem- a platform like Ableton Live with an integrated “ChoreoAI” plugin that choreographs movements and lighting cues in perfect sync with freshly generated tracks. This synergy could open innovative avenues for both music producers and choreographers.
+
+## Final Thoughts
+
+Thank you for considerition. I’m eager to learn, experiment, and push the boundaries of AI-infused artistry alongside a team that shares my passion for creativity and technology. Let’s create something extraordinary together!
