@@ -45,11 +45,11 @@ The model is trained using contrastive learning (InfoNCE loss) to align dance an
 
 ![Similarity Matrix](/image1.png)
 
-*The similarity matrix shows how well the model aligns dance and text embeddings. Higher values along the diagonal (green cells) indicate that the model correctly matches corresponding dance and text pairs. The high diagonal values (0.88-0.95) compared to low off-diagonal values (not shown, but typically 0.01-0.20) demonstrate that the model has learned meaningful alignments.*
+*The similarity matrix shows how well the model aligns dance and text embeddings. Higher values along the diagonal (yellow cells) indicate that the model correctly matches corresponding dance and text pairs. The high diagonal values compared to low off-diagonal values demonstrate that the model has learned meaningful alignments.*
 
-![Accuracy](/image1.png)
+![Accuracy](/image2.png)
 
-*This bar chart shows the accuracy of text-to-dance generation (blue bars) and dance-to-text generation (red bars) on 5 test samples, plus the average. The model achieves high accuracy for both directions, with text-to-dance generation having an average accuracy of 80% and dance-to-text generation having an average accuracy of 79%.*
+*This bar chart shows the accuracy of text-to-dance generation (blue bars) and dance-to-text generation (red bars) on 5 test samples, plus the average.*
 
 ## Project Summary
 This multimodal model represents a crucial step in merging artistic movement with language through deep learning. I plan to refine the model further by experimenting with larger datasets, overlapping sequences, and additional data augmentation techniques.
